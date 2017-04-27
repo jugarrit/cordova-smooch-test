@@ -1,0 +1,33 @@
+{
+  "name": "smooch-cordova",
+  "version": "1.3.1",
+  "description": "Smooch Cordova Plugin for iOS and Android",
+  "cordova": {
+    "id": "cordova-plugin-smooch",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smooch/smooch-cordova.git"
+  },
+  "keywords": [
+    "Smooch",
+    "messaging",
+    "chat",
+    "in-app",
+    "support",
+    "help",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "author": "Smooch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smooch/smooch-cordova/issues"
+  },
+  "homepage": "https://github.com/smooch/smooch-cordova#readme"
+}
