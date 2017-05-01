@@ -20,7 +20,6 @@ var app = {
   // Application Constructor
   initialize: function() {
     this.bindEvents();
-    Smooch.show();
   },
   // Bind Event Listeners
   //
@@ -28,6 +27,7 @@ var app = {
   // 'load', 'deviceready', 'offline', and 'online'.
   bindEvents: function() {
     document.addEventListener('deviceready', this.onDeviceReady, false);
+
   },
   // deviceready Event Handler
   //
@@ -35,6 +35,21 @@ var app = {
   // function, we must explicitly call 'app.receivedEvent(...);'
   onDeviceReady: function() {
     app.receivedEvent('deviceready');
+    document.getElementById("mybtn").addEventListener("click", function(){
+      alert("button clicked");
+      Smooch.show();
+    });
+
+    document.getElementById("login-u1").addEventListener("click", function(){
+      Smooch.login("u1");
+    });
+
+    document.getElementById("login-u2").addEventListener("click", function(){
+      Smooch.login("u2");
+    });
+    document.getElementById("logout").addEventListener("click", function(){
+      Smooch.logout();
+    });
   },
   // Update DOM on a Received Event
   receivedEvent: function(id) {
@@ -47,6 +62,7 @@ var app = {
 
     console.log('Received Event: ' + id);
   }
+
 };
 
 app.initialize();
